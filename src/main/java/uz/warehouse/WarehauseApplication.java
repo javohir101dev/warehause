@@ -1,4 +1,4 @@
-package uz.warehause;
+package uz.warehouse;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;

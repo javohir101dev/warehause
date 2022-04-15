@@ -1,16 +1,16 @@
-package uz.warehause.service;
+package uz.warehouse.service;
 
 import lombok.RequiredArgsConstructor;
 import org.springframework.stereotype.Service;
-import uz.warehause.entity.Product;
-import uz.warehause.entity.ProductMaterials;
-import uz.warehause.entity.Warehouse;
-import uz.warehause.model.ProductMaterialDto;
-import uz.warehause.model.RequestDto;
-import uz.warehause.model.ResponseDto;
-import uz.warehause.repository.ProductMaterialRepo;
-import uz.warehause.repository.ProductRepo;
-import uz.warehause.repository.WarehouseRepo;
+import uz.warehouse.entity.Product;
+import uz.warehouse.entity.ProductMaterials;
+import uz.warehouse.entity.Warehouse;
+import uz.warehouse.model.ProductMaterialDto;
+import uz.warehouse.model.RequestDto;
+import uz.warehouse.model.ResponseDto;
+import uz.warehouse.repository.ProductMaterialRepo;
+import uz.warehouse.repository.ProductRepo;
+import uz.warehouse.repository.WarehouseRepo;
 
 import java.util.ArrayList;
 import java.util.List;

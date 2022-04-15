@@ -1,12 +1,13 @@
-package uz.warehause.controller;
+package uz.warehouse.controller;
 
 import lombok.RequiredArgsConstructor;
 import org.springframework.web.bind.annotation.GetMapping;
+import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RestController;
-import uz.warehause.model.RequestDto;
-import uz.warehause.model.ResponseDto;
-import uz.warehause.service.WarehouseService;
+import uz.warehouse.model.RequestDto;
+import uz.warehouse.model.ResponseDto;
+import uz.warehouse.service.WarehouseService;
 
 import java.util.List;
 
@@ -16,7 +17,7 @@ public class WarehouseController {
 
     private final WarehouseService warehouseService;
 
-    @GetMapping("/getResult")
+    @PostMapping("/getResult")
     public List<ResponseDto> getWarehouseMaterials(@RequestBody List<RequestDto> requestDtoList){
         return warehouseService.getWarehouseResult(requestDtoList);
     }

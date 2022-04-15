@@ -1,4 +1,4 @@
-package uz.warehause.entity;
+package uz.warehouse.entity;
 
 import lombok.AllArgsConstructor;
 import lombok.Getter;
@@ -11,20 +11,20 @@ import javax.persistence.*;
 @Setter
 @NoArgsConstructor
 @AllArgsConstructor
-@Entity(name = "product_materials")
-public class ProductMaterials {
+@Entity(name = "warehause")
+public class Warehouse {
 
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
 
     @ManyToOne
-    private Product product;
-
-    @ManyToOne
     private Material material;
 
-    @Column(name = "quantity")
-    private double quantity;
+    @Column(name = "remainder")
+    private double remainder;
+
+    @Column(name = "price")
+    private Long price;
 
 }
